@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 class="fade-in">Weather App</h1>
+    <div class="input-container fade-in">
+      <input type="text" id="city-input" placeholder="Enter city name" />
+      <button id="get-weather-btn">Get</button>
+    </div>
+    <div id="weather-info" class="hidden weather-card fade-in">
+      <h2 id="city-name"></h2>
+      <p id="temperature"></p>
+      <p id="description"></p>
+    </div>
+    <p id="error-message" class="hidden fade-in">City not found. Please try again.</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
